@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "화면보호기방지_매크로", "화면보호기방지_매크로.vcxproj", "{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Debug|x64.ActiveCfg = Debug|x64
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Debug|x64.Build.0 = Debug|x64
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Debug|x86.Build.0 = Debug|Win32
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Release|x64.ActiveCfg = Release|x64
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Release|x64.Build.0 = Release|x64
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Release|x86.ActiveCfg = Release|Win32
+		{606C19D0-3A39-4DAB-BAF1-D2CF078B39FB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD0F70C2-38CF-4A0F-8442-6894909989DF}
+	EndGlobalSection
+EndGlobal
