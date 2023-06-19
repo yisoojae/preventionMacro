@@ -12,6 +12,10 @@
 #define new DEBUG_NEW
 #endif
 
+void CALLBACK macro_1(HWND hwnd, UINT a, UINT_PTR b, DWORD c) {
+	keybd_event(VK_SCROLL, NULL, 0, NULL);
+	keybd_event(VK_SCROLL, NULL, 2, NULL);
+}
 
 // 응용 프로그램 정보에 사용되는 CAboutDlg 대화 상자입니다.
 
@@ -65,6 +69,8 @@ BEGIN_MESSAGE_MAP(C화면보호기방지매크로Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON1, &C화면보호기방지매크로Dlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_BUTTON2, &C화면보호기방지매크로Dlg::OnBnClickedButton2)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +159,17 @@ HCURSOR C화면보호기방지매크로Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void C화면보호기방지매크로Dlg::OnBnClickedButton1()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	SetTimer(1, 60000, macro_1);
+}
+
+
+void C화면보호기방지매크로Dlg::OnBnClickedButton2()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	KillTimer(1);
+}
